@@ -1,0 +1,21 @@
+<h2>Celebrities's list</h2>
+
+<hr size="1" color="#d9d9d9" style="margin: 20px 0;">
+{{#each celebrity}}
+<div style="display: flex; flex-direction: row; width: 300px; margin: 20px 0;">
+
+  <div>
+    <a href="/celebrities/{{this.id}}/">{{this.name}}</a></li>
+  </div>
+  <div style="margin: 0 20px;">
+    <form action="/celebrities/{{this.id}}/delete" method="post">
+      <button type="submit">Delete the celebrity</button>
+    </form>
+  </div>
+
+</div>
+{{/each}}
+
+<hr size="1" color="#d9d9d9" style="margin: 20px 0;">
+
+<a href="/celebrities/new">Add a celebrity</a>
