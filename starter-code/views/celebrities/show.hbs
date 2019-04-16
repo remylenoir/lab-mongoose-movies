@@ -7,4 +7,13 @@
 
 <hr size="1" color="#d9d9d9" style="margin: 20px 0;">
 
-<a href="/celebrities/{{celebrity.id}}/edit">Edit the celebrity</a> | <a href="/celebrities">Back to the list</a>
+<a href="/celebrities/{{celebrity._id}}/edit">Edit the celebrity</a> | <form
+  action="/celebrities/{{celebrity._id}}/delete" method="post" style="display: inline;">
+  <button type="submit">Delete the celebrity</button>
+</form>
+
+<hr size="1" color="#d9d9d9" style="margin: 20px 0;">
+
+<div>
+  <a href="/celebrities">&lt; Back to the list</a>
+</div>
